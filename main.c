@@ -1,26 +1,14 @@
-#include <stdio.h>   // take input and give output
-#include <stdlib.h>  // for which helps to find functions
+#include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
-    printf("Hello world!\n");   /// \n for new line
-    printf("%d \n", 89);
-    printf("%f \n", 45.7);
-    printf("%ld \n", 746473637);  /// large integer
-    printf("%f \n", 45.7);
-    printf("%lf \n", 454466.4);  /// large float
-    printf("%s \n", "how r u");  /// here in string only use ""
-    printf("%c \n", 'how');  /// output is only w  --> use only ''   c for char
+    int my_age;
+    float pi= 3.14;
+    char my_char = 'dileep';
+    double big_pi = 3.1422222222222;
+    printf("my age is %d \n", 34);
+    printf("my age is %c \n", my_char);
+    printf("my age is %lf \n", big_pi);
     return 0;
 }
-
-
-/// for multi line comments we use /**/
-/* hello
-   how
-   r
-   u
-   */
-
-   /// for single line comment we use //
-   // hello how r u
