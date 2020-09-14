@@ -3,12 +3,12 @@
 
 int main()
 {
-    int my_age;
-    float pi= 3.14;
-    char my_char = 'dileep';
-    double big_pi = 3.1422222222222;
-    printf("my age is %d \n", 34);
-    printf("my age is %c \n", my_char);
-    printf("my age is %lf \n", big_pi);
-    return 0;
+    int m_array[5] = {1,2,3,4,5};  /// here [5]--> no of elements and {---} are the elements
+    int my_array = m_array[2];
+    printf("value = %d \n", my_array);
+
+    for (int i = 0; i < 5; i++)
+    {
+        printf("element[%d] = %d \n", i, m_array[i]);
+    }
 }
