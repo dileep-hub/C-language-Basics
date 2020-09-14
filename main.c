@@ -1,14 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void fun(int n)
+{
+    IntQueue q = new IntQueue();
+    q.enqueue(0);
+    q.enqueue(1);
+    for (int i = 0; i < n; i++)
+    {
+        int a = q.dequeue();
+        int b = q.dequeue();
+        q.enqueue(b);
+        q.enqueue(a + b);
+        ptint(a);
+    }
+}
 int main()
 {
-    int m_array[5] = {1,2,3,4,5};  /// here [5]--> no of elements and {---} are the elements
-    int my_array = m_array[2];
-    printf("value = %d \n", my_array);
-
-    for (int i = 0; i < 5; i++)
-    {
-        printf("element[%d] = %d \n", i, m_array[i]);
-    }
+    fun(6);
 }
