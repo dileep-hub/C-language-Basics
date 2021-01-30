@@ -15,12 +15,12 @@ int main()
 }
 
 
-/// for multi line comments we use /**/
+/// for multi line comments we use. /**/
 /* hello
    how
    r
    u
    */
 
-   /// for single line comment we use //
+   /// for single line comment we use. //
    // hello how r u
